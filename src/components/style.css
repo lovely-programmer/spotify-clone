@@ -1,0 +1,264 @@
+/* Login styling */
+.login{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: black;
+}
+
+.login img{
+    width: 100%;
+}
+
+.login a{
+    padding: 20px;
+    border-radius: 99px;
+    background-color: #1db954;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+}
+
+/* Player styling */
+.player_body{
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar{
+    height: 100vh;
+    flex: 0.2;
+    background-color: #040404;
+    color: white;
+    min-width: 230px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar_logo{
+    height: 70px;
+    padding: 10px;
+    margin-right: auto;
+}
+
+.sidebar_option{
+    display: flex;
+    align-items: center;
+    color: gray;
+    height: 40px;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+}
+
+.sidebar_option:hover{
+    color: white;
+}
+
+.sidebar_option_icons{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar_playlist{
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.sidebar hr{
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.sidebar_option p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.sidebar_fav{
+   display: flex;
+   margin-top: 10px;
+   margin-left: 10px;
+}
+
+.sidebar_fav .MuiIconButton-root {
+    border-radius: 0;
+    color: gray;
+    background: linear-gradient(#3C1EA8, rgb(127,150,153));
+    margin-right: 10px;
+    height: 26px;
+    width: 26px;
+}
+
+.sidebar_fav h4{
+    color: gray;
+}
+
+.sidebar_fav .MuiSvgIcon-root {
+    height: 20px;
+} 
+
+/* Body styling */
+.body{
+    flex: 0.8;
+    overflow-y: scroll;
+    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+    height: 100vh;
+    color: white;
+    padding: 30px;
+}
+
+.body::-webkit-scrollbar{
+    display: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.header_left{
+    flex: 0.5;
+    min-width: 70px;
+    background-color: white;
+    color: gray;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.header_left input{
+    border: none;
+    width: 100%;
+    outline: 0;
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+}
+
+.header_right h4{
+    margin-left: 10px;
+}
+
+.body_info{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.body_info img{
+    height: 20vw;
+    margin: 0 20px;
+    box-shadow: 0, 4px, 60px rgba(0, 0, 0, 0.5);
+}
+
+.body_infoText{
+    flex: 1;
+}
+
+.body_infoText h2{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.body_infoText{
+    font-size: 14px;
+
+}
+
+.body_songs{
+    margin: 20px -30px;
+}
+
+.body_icon{
+    display: flex;
+    align-items: center;
+}
+
+.body_icon .MuiSvgIcon-root{
+    margin-right: 20px;
+}
+
+.body_shuffle{
+    font-size: 80px !important;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.body_shuffle:hover{
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+
+/* footer styling */
+.footer{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    height: 65px;
+    width: 96%;
+    background-color: #282828;
+    padding: 20px;
+}
+
+.footer_left{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+    max-width: 300px;
+}
+
+.footer_center{
+    flex: 0.4;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer_right{
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer_right * .MuiSlider-root{
+    color: green;
+}
+
+.footer_green{
+    color: #1db15e;
+}
+
+.footer_icon:hover,
+.footer_green:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.footer_albumLogo{
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.footer_songInfo h4{
+    margin-bottom: 5px;
+}
+.footer_songInfo p{
+    font-size: 12px;
+}
